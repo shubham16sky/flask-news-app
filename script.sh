@@ -9,3 +9,4 @@ then
 
 else
         sudo docker run --name "testing" --detach  flask-ci-cd
+fi
