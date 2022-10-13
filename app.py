@@ -1,6 +1,7 @@
 from distutils.log import debug
 from flask import Flask , render_template
 import requests
+from waitress import serve
 
 app = Flask(__name__)
 
@@ -14,7 +15,8 @@ def index():
     }
     return render_template("index.html", case=cases)
 if __name__ == "__main__":
-    app.run(debug=True,host='34.228.16.121', port=5000)
+    #app.run(debug=True,host='34.228.16.121', port=5000)
+    serve(app, host='34.228.16.121', port=5000)
 
 
 
