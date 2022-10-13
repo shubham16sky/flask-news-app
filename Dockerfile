@@ -6,7 +6,7 @@ COPY . /news_app
 WORKDIR /news_app
 EXPOSE 5000
 
-CMD [ "python3", "-m" , "flask", "run", "--host=0.0.0.0"]
+CMD [ "python3", "-m" , "flask", "run"]
 
 #ENTRYPOINT ["python"]
 
