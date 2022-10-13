@@ -1,5 +1,5 @@
 pipeline{
-    agent { label 'marshal' }
+    agent { label 'test-server' }
      environment {
         CREDENTIALS=credentials('sudopass')
 
