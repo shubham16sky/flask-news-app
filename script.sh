@@ -8,5 +8,5 @@ then
         sudo docker stop testing && sudo docker rm testing  && sudo docker run --name "testing" --detach  flask-ci-cd
 
 else
-        sudo docker run --name "testing" --detach -p 3000:5000  flask-ci-cd
+        sudo docker run --name "testing"  -p 3000:5000  flask-ci-cd
 fi
